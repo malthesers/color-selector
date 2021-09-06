@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  margin: 5rem auto;
+  width: 200px;
+}
+
+form {
+  text-align: center;
+}
+
+#display-color {
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
