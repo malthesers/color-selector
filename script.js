@@ -17,8 +17,8 @@ function getColourInfo() {
 }
 
 function displayColourInfo(css, hex, rgb, hsl) {
-  //Display color block
-  displayColor(css);
+  //Display colour block
+  displayColour(css);
 
   //Display colour codes
   displayHex(hex);
@@ -30,8 +30,8 @@ function getHex() {
   return document.querySelector("input").value.toUpperCase();
 }
 
-function displayColor(css) {
-  document.querySelector("#display-color").style.backgroundColor = css;
+function displayColour(css) {
+  document.querySelector("#display-colour").style.backgroundColor = css;
 }
 
 function displayHex(hex) {
