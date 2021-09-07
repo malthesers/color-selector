@@ -3,20 +3,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOMContentLoaded");
 
-  document.querySelector("input").addEventListener("input", showColourInfo);
+  document.querySelector("input").addEventListener("input", getColourInfo);
 });
 
-function showColourInfo() {
+function getColourInfo() {
   //Retrieve current colour hexcode
   const hex = getHex();
   const rgb = convertHEXtoRGB(hex);
   const hsl = convertRGBtoHSL(rgb);
   const css = convertRGBtoCSS(rgb);
 
-  displayInfo(css, hex, rgb, hsl);
+  displayColourInfo(css, hex, rgb, hsl);
 }
 
-function displayInfo(css, hex, rgb, hsl) {
+function displayColourInfo(css, hex, rgb, hsl) {
   //Display color block
   displayColor(css);
 
