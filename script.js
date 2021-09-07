@@ -13,6 +13,10 @@ function showColourInfo() {
   const hsl = convertRGBtoHSL(rgb);
   const css = convertRGBtoCSS(rgb);
 
+  displayInfo(css, hex, rgb, hsl);
+}
+
+function displayInfo(css, hex, rgb, hsl) {
   //Display color block
   displayColor(css);
 
