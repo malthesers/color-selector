@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function showColourInfo() {
   //Retrieve current colour hexcode
-  let hex = document.querySelector("input").value.toUpperCase();
-  let rgb = hexToRGB(hex);
-  let hsl = rgbToHSL(rgb);
+  const hex = getHex();
+  const rgb = convertHEXtoRGB(hex);
+  const hsl = convertRGBtoHSL(rgb);
+  const css = convertRGBtoCSS(rgb);
 
   //Display color block
-  displayColor(hex);
+  displayColor(css);
 
   //Display colour codes
   displayHex(hex);
@@ -21,8 +22,12 @@ function showColourInfo() {
   displayHSL(hsl);
 }
 
-function displayColor(hex) {
-  document.querySelector("#display-color").style.backgroundColor = hex;
+function getHex() {
+  return document.querySelector("input").value.toUpperCase();
+}
+
+function displayColor(css) {
+  document.querySelector("#display-color").style.backgroundColor = css;
 }
 
 function displayHex(hex) {
@@ -41,7 +46,7 @@ function displayHSL(hsl) {
   ).textContent = `HSL: ${hsl.h}, ${hsl.s}%, ${hsl.l}%`;
 }
 
-function hexToRGB(hex) {
+function convertHEXtoRGB(hex) {
   //Parse integers from hexadecimal to decimal
   let r = parseInt(hex.substring(1, 3), 16);
   let g = parseInt(hex.substring(3, 5), 16);
@@ -49,13 +54,13 @@ function hexToRGB(hex) {
 
   //Return decimal rgb values as an object
   return {
-    r: r,
-    g: g,
-    b: b,
+    r,
+    g,
+    b,
   };
 }
 
-function rgbToHSL(rgb) {
+function convertRGBtoHSL(rgb) {
   let r = rgb.r;
   let g = rgb.g;
   let b = rgb.b;
@@ -100,4 +105,8 @@ function rgbToHSL(rgb) {
     s: Math.round(s),
     l: Math.round(l),
   };
+}
+
+function convertRGBtoCSS(rgb) {
+  return `rgb(${rgb.r},${rgb.g},${rgb.b})`;
 }
