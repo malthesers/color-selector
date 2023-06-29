@@ -28,7 +28,7 @@ Gets 2 colo~~u~~rs on each side of chosen colo~~u~~r.
 ### ↕️ Monochromatic
 Lighter and darker variations of the same colo~~u~~r.
 
-Gets 2 lighter and 2 darker variations of the chosen colo~~u~~r.
+Gets 2 lighter + 2 darker variations of the chosen colo~~u~~r, ~~but not really~~.
 
 ### 🔼 Triad
 Colo~~u~~rs forming an even triangle on the colo~~u~~r wheel.
@@ -40,5 +40,12 @@ Colo~~u~~rs opposite each other on the colo~~u~~r wheel.
 
 Gets 2 shades of chosen colo~~u~~r + opposite colo~~u~~r and shade of it.
 
-### Compound
-### Shades
+### 🔀 Compound
+Colo~~u~~rs analogous to the opposite on the colo~~u~~r wheel.
+
+Gets 2 shades of chosen colo~~u~~r + 2 compound colo~~u~~rs.
+
+### ⏸️ Shades
+Ngl I think this one does what monochromatic _should_ do.
+
+Gets 2 lighter + 2 darker variations of the chosen colo~~u~~r.
