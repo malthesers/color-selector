@@ -25,15 +25,17 @@ Colo~~u~~rs next to each other on the colo~~u~~r wheel.
 
 Gets 2 colo~~u~~rs on each side of chosen colo~~u~~r.
 
-### Monochromatic
+### ↕️ Monochromatic
+Lighter and darker variations of the same colo~~u~~r.
 
+Gets 2 lighter and 2 darker variations of the chosen colo~~u~~r.
 
 ### 🔼 Triad
 Colo~~u~~rs forming an even triangle on the colo~~u~~r wheel.
 
 Gets 2 colo~~u~~rs forming the triangle + 1 shade of each.
 
-### Complementary
+### 🔃 Complementary
 Colo~~u~~rs opposite each other on the colo~~u~~r wheel.
 
 Gets 2 shades of chosen colo~~u~~r + opposite colo~~u~~r and shade of it.
